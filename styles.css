@@ -1,0 +1,253 @@
+* 
+font-family:"roboto";
+{
+    @-webkit-viewport   { width: device-width; }
+    @-moz-viewport      { width: device-width; }
+    @-ms-viewport       { width: device-width; }
+    @-o-viewport        { width: device-width; }
+    @viewport           { width: device-width; }
+}
+
+
+
+body {
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+    width: 100vw;
+    margin:0;
+    padding: 0%;
+    overflow-x:hidden;
+    z-index: 0;
+    background-color: black;
+    scroll-behavior: smooth;
+}
+header {
+    height: 85px;
+    align-items: center;
+    z-index: 3;
+    overflow: hidden;
+}
+.backgroundfill {
+    background-color: black;
+    z-index: -10;
+    margin:auto;
+}
+
+body > header{
+    z-index: 3;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-align: center;
+    justify-content: space-around;
+    width: 80%;
+
+}
+
+nav ul{
+    z-index: 3;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: space-evenly;
+    flex-direction: row;
+    gap:20px;
+
+
+}
+nav > ul > li {
+    color:aliceblue;
+    z-index: 3;
+    list-style-type: none;
+    border: #555;
+
+}
+
+#coolpix {
+    position: absolute;
+    width:100vw;
+    margin: 0;
+    padding: 0;
+    z-index: 1;
+}
+
+.imgdiv {
+    position: relative;
+    margin: auto;
+    margin:0;
+    opacity: 0.9;
+    background-color: black;
+    z-index: 3;
+
+}
+
+.welcome {
+    box-sizing: content-box;
+    line-height: 24px;
+    width:30vw;
+    height:30vw;
+    z-index: 3;
+    position: absolute;
+    border: 1px solid;
+    background-color: aliceblue;
+    margin: 82.5px 0 0 82.5px;
+    object-fit: contain;
+    text-align: center;
+
+}
+h1, h2 {
+    line-height: 18px;
+    font-weight: 800;
+    z-index: 3;
+}
+#accessibility-img {
+    text-align: left;
+    z-index: 3;
+    object-fit: cover;
+    color: black;
+    margin-top: 2vw;
+    
+}
+
+#blob {
+    background-color: white;
+    height: 34vmax;
+    aspect-ratio: 1;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    translate: -50% -50%;
+    border-radius: 50%;
+    background: linear-gradient(to right, aquamarine, mediumpurple);
+    animation: rotate 20s infinite;
+    opacity: 0.8;
+    overflow: hidden;
+  }
+  
+  #blur {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    z-index: 2;
+    backdrop-filter: blur(12vmax);
+    overflow:auto;
+  }
+  @keyframes rotate {
+    from {
+      rotate: 0deg;
+    }
+    
+    50% {
+      scale: 1 1.5;
+    }
+    
+    to {
+      rotate: 360deg;
+    }
+  }
+
+
+/* Tooltip container */
+.tooltip {
+    position: relative;
+    display: inline-block;
+    border-bottom: 1px dotted black; /* If you want dots under the hoverable text */
+  }
+  
+  /* Tooltip text */
+  .tooltip .tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+    padding: 5px 0;
+    border-radius: 6px;
+  
+    /* Position the tooltip text */
+    position: absolute;
+    z-index: 1;
+    bottom: 125%;
+    left: 50%;
+    margin-left: -60px;
+  
+    /* Fade in tooltip */
+    opacity: 0;
+    transition: opacity 0.3s;
+  }
+  
+  /* Tooltip arrow */
+  .tooltip .tooltiptext::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #fff transparent transparent transparent;
+  }
+  
+  .contactbutton {
+    margin-top: 4vh;
+    color:white;
+    background-color:#555;
+    width:8vw;
+    height: 2vw;
+    font-family: 'Roboto';
+    font-weight:200;
+    line-height: 16px;
+  }
+
+  #contacttext {
+    font-size: 32px;
+    font-weight: 500;
+    line-height: 40px;
+    text-shadow: #555;
+    letter-spacing: -5;
+    padding-top:15px;
+    margin: 15px;
+  }
+
+  #learnmore {
+    margin-top:8vh;
+    text-decoration: underline;
+    
+  }
+  #learnmore:hover, .nav-link, .contactbutton:hover {
+    cursor: pointer;
+  }
+  .nav-link {
+    font-family: roboto;
+    text-decoration: none;
+    color:black;
+    border:2px solid rgba(255, 255, 255, 0.144);
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 10%;
+    box-shadow: 3px 3px 2px 1px rgba(0, 0, 0, .2);
+    background-clip: padding-box;
+}
+
+.firstpart {
+    color:white;
+    position: relative;
+    z-index:10;
+    margin-top:100vh;
+    text-align: center;
+    line-height: 40px;
+    align-items: center;
+    font-weight: 450;
+    letter-spacing: -1;
+}
+
+.tech-stack-div{
+    position: relative;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    gap:8vw;
+}
+#about {
+    text-transform: capitalize;
+    text-decoration: solid;
+}

@@ -3,7 +3,7 @@
 }
 
 
-* 
+* {
 font-family{ Roboto, sans-serif;
 }
 letter-spacing: -1;
@@ -88,7 +88,7 @@ nav > ul > li {
 }
 
 .welcome {
-  color:black;
+    color: black;
     box-sizing: content-box;
     line-height: 24px;
     width:30vw;
@@ -115,7 +115,6 @@ nav > ul > li {
     object-fit: cover;
     color: black;
     margin-top: 2vw;
-    
 }
 
 #blob {

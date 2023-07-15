@@ -165,7 +165,7 @@ nav > ul > li {
   }
   
   .contactbutton {
-    margin-top: 4vh;
+    margin-top: 2vh;
     color:white;
     background-color:#555;
     width:8vw;
@@ -190,7 +190,7 @@ nav > ul > li {
   }
 
   #learnmore {
-    margin-top:8vh;
+    margin-top:4vh;
     text-decoration: underline;
     
   }
@@ -404,10 +404,13 @@ list-style-type: none;
 }
 footer {
   background-color: black;
+  margin-left: 4vh;
+  align-self: center;
 }
 #githubmark {
   width: 98;
   height: 96;
+  
 }
 
 #madewithlove {
